@@ -1,0 +1,689 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<style>
+    main#hites_halloween {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1920px;
+        padding: 0;
+        margin: 0 auto;
+        background: #dedede;
+        font-family: 'Lato', sans-serif;
+        line-height: 1.3;
+    }
+
+    main#hites_halloween header {
+        width: 100%;
+        height: 520px;
+        background-color: #005ea6;
+        background-image: url(img/storm-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+
+    }
+
+    main#hites_halloween header:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        animation: thunder-bg 6s infinite;
+    }
+
+    main#hites_halloween canvas {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    main#hites_halloween #canvas3 {
+        z-index: 3;
+    }
+
+    main#hites_halloween #canvas2 {
+        z-index: 5;
+    }
+
+    main#hites_halloween #canvas1 {
+        z-index: 10;
+    }
+
+    @keyframes thunder-bg {
+        0% {
+            background-color: rgba(34, 34, 34, .5);
+        }
+        9% {
+            background-color: rgba(34, 34, 34, .5);
+        }
+        10% {
+            background-color: rgba(248, 96, 96, 0.1);
+        }
+        10.5% {
+            background-color: rgba(34, 34, 34, .5);
+        }
+        80% {
+            background-color: rgba(34, 34, 34, .5);
+        }
+        82% {
+            background-color: rgba(59, 59, 59, .05);
+        }
+        83% {
+            background-color: rgba(34, 34, 34, .5);
+        }
+        83.5% {
+            background-color: rgba(59, 59, 59, .1);
+        }
+        100% {
+            background-color: rgba(34, 34, 34, .5);
+        }
+    }
+
+    main#hites_halloween .header_wrapper {
+        position: absolute;
+        width: 100%;
+        height: 520px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        z-index: 30;
+        background: url(img/halloween_hites_bg.png);
+        background-size: cover;
+        background-position: 20% center;
+    }
+
+    main#hites_halloween .header_wrapper h2 {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: calc(12px + 0.3vw);
+        text-align: center;
+        width: 90%;
+    }
+
+    main#hites_halloween .header_wrapper img {
+        width: 85%;
+        height: auto;
+        max-width: 440px;
+    }
+
+    main#hites_halloween .bottom_wrapper {
+        width: 100%;
+        height: calc(90px - 2.3vw);
+        position: absolute;
+        z-index: 30;
+        text-align: center;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main#hites_halloween .bottom_wrapper img {
+        max-width: 300px;
+        width: 70%;
+        margin-bottom: 5px;
+    }
+
+    /* Seccion Productos */
+
+    main#hites_halloween .main_halloween {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    main#hites_halloween .wrap_products h3.title_section {
+        font-size: calc(1.15em + 1vw);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 4% 0;
+        font-weight: 400;
+        text-align: center;
+        width: max-content;
+        position: relative;
+    }
+
+    main#hites_halloween .dark-hites {
+        background: #222;
+        color: #f3f3f3;
+    }
+
+    main#hites_halloween .diviser_bottom {
+        width: 100%;
+        background-position: 50% 100%;
+        background-size: cover;
+    }
+
+    main#hites_halloween .diviser_bottom.pattern01 {
+        height: 100px;
+        background: #222 url(img/diviser_pattern01.png) no-repeat;
+        background-position: 55% 100.8%;
+        background-size: contain;
+    }
+
+    main#hites_halloween .diviser_bottom.pattern02 {
+        height: 200px;
+        background: #dedede url(img/diviser_pattern02.png) repeat-x;
+        background-position: 10% 100%;
+        background-size: cover;
+    }
+
+    main#hites_halloween .diviser_bottom.pattern03 {
+        height: 134px;
+        background: #dedede url(img/diviser_pattern03.png) repeat-x;
+        background-position: 10% 100%;
+        background-size: cover;
+    }
+
+    main#hites_halloween .diviser_bottom.pattern04 {
+        height: 140px;
+        background: #dedede url(img/diviser_pattern04.png) repeat-x;
+        background-position: 10% 100%;
+        background-size: cover;
+    }
+
+    main#hites_halloween .diviser_bottom.pattern05 {
+        height: 138px;
+        background: #dedede url(img/diviser_pattern05.png) repeat-x;
+        background-position: 10% 100%;
+        background-size: cover;
+    }
+
+    main#hites_halloween .diviser_bottom.pattern06 {
+        height: 200px;
+        background: #fff url(img/diviser_pattern06.png) repeat-x;
+        background-position: 90% 100%;
+        background-size: cover;
+    }
+
+    main#hites_halloween .last_diviser {
+        height: 40px;
+        background: #ddd;
+    }
+
+
+    main#hites_halloween .dark-hites .product_info_carrusel .precio_hites {
+        color: #fff;
+        font-size: 21px;
+        font-weight: 700;
+        height: auto;
+    }
+
+    main#hites_halloween .dark-hites .product_info_carrusel .product_name {
+        color: #fff;
+    }
+
+    main#hites_halloween .gray-hites {
+        background: #dedede;
+    }
+
+    main#hites_halloween .light-hites {
+        background: #fff;
+    }
+
+    main#hites_halloween .txt_destacado {
+        color: #fff;
+        background: #f9a535;
+        padding: 0 2px;
+        display: inline-block;
+    }
+
+    /* Iconos */
+
+    main#hites_halloween .wrap_products h3.title_section::before {
+        content: '';
+        position: absolute;
+        height: 60%;
+        width: 14%;
+        left: -18%;
+        top: 20%;
+    }
+
+
+
+    main#hites_halloween .wrap_products h3.title_section::after {
+        content: '';
+        position: absolute;
+        height: 60%;
+        width: 14%;
+        right: -18%;
+        top: 20%;
+    }
+
+    main#hites_halloween .wrap_products h3.i_calabaza::before,
+    main#hites_halloween .wrap_products h3.i_calabaza::after {
+        background: #222 url(img/i_calabaza.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    main#hites_halloween .wrap_products h3.i_garra::before,
+    main#hites_halloween .wrap_products h3.i_garra::after {
+        background: #ddd url(img/i_garra.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    main#hites_halloween .wrap_products h3.i_calavera::before,
+    main#hites_halloween .wrap_products h3.i_calavera::after {
+        background: #fff url(img/i_calavera.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    main#hites_halloween .wrap_products h3.i_muneco::before,
+    main#hites_halloween .wrap_products h3.i_muneco::after {
+        background: #ddd url(img/i_muneco.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    main#hites_halloween .wrap_products h3.i_bruja::before,
+    main#hites_halloween .wrap_products h3.i_bruja::after {
+        background: #fff url(img/i_bruja.svg) no-repeat center;
+        background-size: contain;
+        width: 18%;
+    }
+
+    main#hites_halloween .wrap_products h3.i_bruja::before {
+        left: -21%;
+    }
+
+    main#hites_halloween .wrap_products h3.i_bruja::after {
+        right: -22%;
+    }
+
+    main#hites_halloween .wrap_products h3.i_tumba::before,
+    main#hites_halloween .wrap_products h3.i_tumba::after {
+        background: #ddd url(img/i_tumba.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    main#hites_halloween .wrap_products h3.i_sombrero::before,
+    main#hites_halloween .wrap_products h3.i_sombrero::after {
+        background: #fff url(img/i_sombrero.svg) no-repeat center;
+        background-size: contain;
+    }
+
+
+    @media screen and (min-width: 1300px) {
+        main#hites_halloween .diviser_bottom.pattern02,
+        main#hites_halloween .diviser_bottom.pattern03,
+        main#hites_halloween .diviser_bottom.pattern04,
+        main#hites_halloween .diviser_bottom.pattern05,
+        main#hites_halloween .diviser_bottom.pattern06 {
+            background-size: contain;
+        }
+    }
+
+
+    @media screen and (max-width: 768px) {
+        main#hites_halloween .diviser_bottom.pattern01 {
+            background-size: 580px;
+        }
+        main#hites_halloween .diviser_bottom.pattern02,
+        main#hites_halloween .diviser_bottom.pattern03,
+        main#hites_halloween .diviser_bottom.pattern04 {
+            height: 120px;
+        }
+
+        main#hites_halloween header {
+            height: 460px;
+        }
+
+        main#hites_halloween .header_wrapper {
+            height: 460px;
+            background-position: 5% center;
+        }
+
+        main#hites_halloween .header_wrapper img {
+            max-width: 390px;
+        }
+
+        main#hites_halloween .diviser_bottom.pattern05 {
+            height: 110px;
+            background-position: 34% 100%;
+        }
+
+        main#hites_halloween .diviser_bottom.pattern04 {
+            background-position: 15% 100%;
+        }
+
+        main#hites_halloween .diviser_bottom.pattern03 {
+            background-position: 60% 100%;
+
+        }
+
+
+    }
+
+    @media screen and (max-width: 570px) {
+        main#hites_halloween .wrap_products h3.title_section {
+            width: 42%;
+        }
+
+        main#hites_halloween .wrap_products h3.title_section::before {
+            width: 25%;
+            left: -31%;
+            top: 20%;
+        }
+
+
+
+        main#hites_halloween .wrap_products h3.title_section::after {
+            width: 25%;
+            right: -31%;
+            top: 20%;
+        }
+
+        main#hites_halloween .wrap_products h3.i_bruja::after {
+            width: 42%;
+            right: -48%;
+        }
+
+        main#hites_halloween .wrap_products h3.i_bruja::before {
+            width: 42%;
+            left: -48%;
+        }
+
+        main#hites_halloween .wrap_products h3.i_bruja::after {
+            right: -44%;
+        }
+
+        main#hites_halloween .wrap_products h3.i_bruja::before {
+            left: -44%;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        main#hites_halloween .wrap_products h3.title_section {
+            width: 52%;
+        }
+
+        main#hites_halloween header {
+            height: 400px;
+        }
+
+        main#hites_halloween .header_wrapper {
+            height: 400px;
+            background-position: 5% center;
+        }
+    }
+</style>
+
+<main id="hites_halloween">
+    <header>
+        <canvas id="canvas1"></canvas>
+        <canvas id="canvas2"></canvas>
+        <canvas id="canvas3"></canvas>
+        <div class="header_wrapper">
+
+            <img src="img/hites_pequenos_disfraces_logo.svg" alt="Pequeños Disfraces, Grandes Aventuras - Especial Halloween en Hites.com">
+            <h2>Este Halloween, hazlos protagonistas de sus historias</h2>
+        </div>
+        <div class="bottom_wrapper">
+            <img src="img/hites_halloween.svg" alt="Hites Halloween">
+        </div>
+    </header>
+    <section class="main_halloween">
+        <article class="dark-hites wrap_products">
+            <h3 class="title_section i_calabaza">Disfraces
+                <span class="txt_destacado">Infantiles</span>
+            </h3>
+            <div class="product-list">
+                <!-- Ingresar Productos -->
+            </div>
+            <div class="diviser_bottom pattern01"></div>
+        </article>
+        <article class="wrap_products gray-hites">
+            <h3 class="title_section i_garra">Zapatos y
+                <span class="txt_destacado">Zapatillas</span>
+            </h3>
+            <div class="product-list">
+                <!-- Ingresar Productos -->
+            </div>
+            <div class="diviser_bottom pattern02"></div>
+        </article>
+        <article class="wrap_products light-hites">
+            <h3 class="title_section i_calavera">Maquillaje
+                <span class="txt_destacado">de Terror</span>
+            </h3>
+            <div class="product-list">
+                <!-- Ingresar Productos -->
+            </div>
+            <div class="diviser_bottom pattern03"></div>
+        </article>
+        <article class="wrap_products gray-hites">
+            <h3 class="title_section i_muneco">Tus personajes
+                <span class="txt_destacado">favoritos</span>
+            </h3>
+            <div class="product-list">
+                <!-- Ingresar Productos -->
+            </div>
+            <div class="diviser_bottom pattern02"></div>
+        </article>
+        <article class="wrap_products light-hites">
+            <h3 class="title_section i_bruja">¡Prepara
+                <span class="txt_destacado">tu fiesta!</span>
+            </h3>
+            <div class="product-list">
+                <!-- Ingresar Productos -->
+            </div>
+            <div class="diviser_bottom pattern04"></div>
+        </article>
+        <article class="wrap_products gray-hites">
+            <h3 class="title_section i_tumba">Una pieza
+                <span class="txt_destacado">de miedo</span>
+            </h3>
+            <div class="product-list">
+                <!-- Ingresar Productos -->
+            </div>
+            <div class="diviser_bottom pattern05"></div>
+        </article>
+        <article class="wrap_products light-hites">
+            <h3 class="title_section i_sombrero">¡Disfraces
+                <span class="txt_destacado">para el verano!</span>
+            </h3>
+            <div class="product-list">
+                <!-- Ingresar Productos -->
+            </div>
+            <div class="diviser_bottom pattern06"></div>
+            <div class="last_diviser"></div>
+        </article>
+    </section>
+
+</main>
+<script>
+    var canvas1 = document.getElementById('canvas1');
+    var canvas2 = document.getElementById('canvas2');
+    var canvas3 = document.getElementById('canvas3');
+    var ctx1 = canvas1.getContext('2d');
+    var ctx2 = canvas2.getContext('2d');
+    var ctx3 = canvas3.getContext('2d');
+
+    var rainthroughnum = 500;
+    var speedRainTrough = 20;
+    var RainTrough = [];
+
+    var rainnum = 500;
+    var rain = [];
+
+    var lightning = [];
+    var lightTimeCurrent = 0;
+    var lightTimeTotal = 0;
+
+    var w = canvas1.width = canvas2.width = canvas3.width = window.innerWidth;
+    var h = canvas1.height = canvas2.height = canvas3.height = 700;
+    window.addEventListener('resize', function () {
+        w = canvas1.width = canvas2.width = canvas3.width = window.innerWidth;
+        h = canvas1.height = canvas2.height = canvas3.height = 700;
+    });
+
+    function random(min, max) {
+        return Math.random() * (max - min + 1) + min;
+    }
+
+    function clearcanvas1() {
+        ctx1.clearRect(0, 0, w, h);
+    }
+
+    function clearcanvas2() {
+        ctx2.clearRect(0, 0, canvas2.width, canvas2.height);
+    }
+
+    function clearCanvas3() {
+        ctx3.globalCompositeOperation = 'destination-out';
+        ctx3.fillStyle = 'rgba(0,0,0,' + random(1, 30) / 100 + ')';
+        ctx3.fillRect(0, 0, w, h);
+        ctx3.globalCompositeOperation = 'source-over';
+    };
+
+    function createRainTrough() {
+        for (var i = 0; i < rainthroughnum; i++) {
+            RainTrough[i] = {
+                x: random(0, w),
+                y: random(0, h),
+                length: Math.floor(random(1, 830)),
+                opacity: Math.random() * 0.2,
+                xs: random(-2, 2),
+                ys: random(10, 20)
+            };
+        }
+    }
+
+    function createRain() {
+        for (var i = 0; i < rainnum; i++) {
+            rain[i] = {
+                x: Math.random() * w,
+                y: Math.random() * h,
+                l: Math.random() * 1,
+                xs: -4 + Math.random() * 4 + 2,
+                ys: Math.random() * 10 + 10
+            };
+        }
+    }
+
+    function createLightning() {
+        var x = random(100, w - 100);
+        var y = random(0, h / 4);
+
+        var createCount = random(1, 3);
+        for (var i = 0; i < createCount; i++) {
+            single = {
+                x: x,
+                y: y,
+                xRange: random(5, 30),
+                yRange: random(10, 25),
+                path: [{
+                    x: x,
+                    y: y
+                }],
+                pathLimit: random(40, 55)
+            };
+            lightning.push(single);
+        }
+    };
+
+    function drawRainTrough(i) {
+        ctx1.beginPath();
+        var grd = ctx1.createLinearGradient(0, RainTrough[i].y, 0, RainTrough[i].y + RainTrough[i].length);
+        grd.addColorStop(0, "rgba(255,255,255,0)");
+        grd.addColorStop(1, "rgba(255,255,255," + RainTrough[i].opacity + ")");
+
+        ctx1.fillStyle = grd;
+        ctx1.fillRect(RainTrough[i].x, RainTrough[i].y, 1, RainTrough[i].length);
+        ctx1.fill();
+    }
+
+    function drawRain(i) {
+        ctx2.beginPath();
+        ctx2.moveTo(rain[i].x, rain[i].y);
+        ctx2.lineTo(rain[i].x + rain[i].l * rain[i].xs, rain[i].y + rain[i].l * rain[i].ys);
+        ctx2.strokeStyle = 'rgba(174,194,224,0.5)';
+        ctx2.lineWidth = 1;
+        ctx2.lineCap = 'round';
+        ctx2.stroke();
+    }
+
+    function drawLightning() {
+        for (var i = 0; i < lightning.length; i++) {
+            var light = lightning[i];
+
+            light.path.push({
+                x: light.path[light.path.length - 1].x + (random(0, light.xRange) - (light.xRange / 2)),
+                y: light.path[light.path.length - 1].y + (random(0, light.yRange))
+            });
+
+            if (light.path.length > light.pathLimit) {
+                lightning.splice(i, 1);
+            }
+
+            ctx3.strokeStyle = 'rgba(255, 255, 255, .1)';
+            ctx3.lineWidth = 3;
+            if (random(0, 15) === 0) {
+                ctx3.lineWidth = 6;
+            }
+            if (random(0, 30) === 0) {
+                ctx3.lineWidth = 8;
+            }
+
+            ctx3.beginPath();
+            ctx3.moveTo(light.x, light.y);
+            for (var pc = 0; pc < light.path.length; pc++) {
+                ctx3.lineTo(light.path[pc].x, light.path[pc].y);
+            }
+            if (Math.floor(random(0, 30)) === 1) { //to fos apo piso
+                ctx3.fillStyle = 'rgba(255, 255, 255, ' + random(1, 3) / 100 + ')';
+                ctx3.fillRect(0, 0, w, h);
+            }
+            ctx3.lineJoin = 'miter';
+            ctx3.stroke();
+        }
+    };
+
+    function animateRain() {
+        clearcanvas2();
+        for (var i = 0; i < rainnum; i++) {
+            rain[i].x += rain[i].xs;
+            rain[i].y += rain[i].ys;
+            if (rain[i].x > w || rain[i].y > h) {
+                rain[i].x = Math.random() * w;
+                rain[i].y = -20;
+            }
+            drawRain(i);
+        }
+    }
+
+    function animateLightning() {
+        clearCanvas3();
+        lightTimeCurrent++;
+        if (lightTimeCurrent >= lightTimeTotal) {
+            createLightning();
+            lightTimeCurrent = 0;
+            lightTimeTotal = 200; //rand(100, 200)
+        }
+        drawLightning();
+    }
+
+    function init() {
+        createRainTrough();
+        createRain();
+        window.addEventListener('resize', createRainTrough);
+    }
+    init();
+
+    function animloop() {
+        animateRain();
+        animateLightning();
+        requestAnimationFrame(animloop);
+    }
+    animloop();
+</script>
